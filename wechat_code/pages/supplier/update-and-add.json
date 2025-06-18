@@ -1,0 +1,11 @@
+
+{
+  "usingComponents": {
+  "rating":"/component/rating/index",
+    "com-date": "/component/com-date/com-date",
+    "com-edit": "/component/com-editor/com-editor"
+  },
+  "navigationBarTitleText": "供应商",
+  "navigationBarBackgroundColor":"#B7D573",
+  "navigationBarTextStyle": "white"
+}

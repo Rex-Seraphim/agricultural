@@ -1,0 +1,118 @@
+<view class="index-container">
+    <view class="content">
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#b7d57330'   indicator-active-color="#b7d573"   autoplay="{{true}}"  circular="{{true}}">
+        <swiper-item class="swiper-item"  wx:for="{{swiperList}}" wx:if="{{index<=2}}" wx:key="index"     >
+            <image src="{{item.img}}" mode="aspectFill"   class="swiper-img" bind:tap="onSwiperTap" data-item="{{item}}" ></image>
+            <view   wx:if="true"  class="swiper-title">{{item.title}}</view>
+        </swiper-item>
+    </swiper>
+        <web-view  wx:if="{{swiperUrl}}" src="{{swiperUrl}}"></web-view>
+<!-- 菜单栏menu -->
+
+
+        <view wx:if="{{true}}"   class="grid-box">
+            <view wx:for="{{frontMenuList}}" wx:key="index" class="grid-box-item">
+                <view  data-item="{{item}}" bind:tap="selectTap">
+                    <text class="grid-icon  {{item.child[0].appFrontIcon}} " />
+                    <text class="item-munu">{{item.child[0].menu}}</text>
+                </view>
+            </view>
+
+            <com-popup id="bottomFrame" className="buttom-popup">
+                <view bind:tap="cancelShow" style="display: flex;justify-content: flex-end;margin:20rpx 40rpx 0 0;">取消</view>
+                <view data-myitem="{{myitem}}" bind:tap="tomenuTap" wx:for="{{childItem}}" wx:for-item="myitem" wx:for-index="childindex" style="height: 100%;height: 88rpx;margin:20rpx 0;text-align: center;line-height: 88rpx;border-width: 0 0 2rpx 0;border-style: solid;border-color: #eee;" wx:key="childindex">
+                    {{myitem.menu}}
+                </view>
+
+
+            </com-popup>
+
+
+
+        </view>
+
+<!-- 商品推荐 -->
+
+<view class="max-list-box">
+
+<view class="goods-list-title-box">
+
+<view class="goods-list-title-text">农产品信息</view>
+<text bind:tap="checkMoreTap" data-tablename="agriculturalproductinformation"  class="goods-list-title-more" >更多</text>
+</view>
+
+<view class="list-two-box">
+<view class="list-two-item-box" wx:for="{{homeagriculturalproductinformationList}}"  catchtap="toDetail" data-item="{{item}}"  wx:key="index"       data-tablename="agriculturalproductinformation"
+      data-id="{{item.id}}">
+<image class="list-img-two"  src="{{item.image}}" mode="aspectFill" />
+<view    class="list-title-two">
+{{item.productname}}
+</view>
+<view    class="list-title-two">
+出产地:{{item.placeofproduction}}
+</view>
+<view  class="list-two-pirce">￥{{item.price}}</view>
+
+
+</view>
+
+</view>
+
+
+<!--  默认样式9ok-->
+
+</view>
+
+
+
+
+
+<!-- 新闻资讯 -->
+<view wx:if="{{false && 1 == 3}}" class="idea newsIdea" >
+<view  class="news-box1"></view>
+<view  class="news-box2"></view>
+<view class="news-box3"></view>
+<view  class="news-box4"></view>
+</view>
+<view class="news-box">
+
+
+    <view class="news-title-box">
+        <view class="news-title-text">公告资讯</view>
+        <text class="news-title-more" bind:tap="toNewsList">更多</text>
+    </view>
+    <!--  默认样式1ok,2ok,3ok,4ok-->
+
+<!--  默认样式5ok-->
+
+<!--  默认样式6ok-->
+
+    <!--  默认样式7ok-->
+
+
+
+    <!--  默认样式8ok-->
+
+<view class="news-list-box">
+    <view  wx:for="{{newsList}}" class="news-list-item" bind:tap="toNewsDetail" data-id="{{item.id}}" wx:key="index">
+        <view class="num">
+        <view style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;" :style="{transform: 'rotate('+(-index*60)+'deg)'}" class="dian">
+            <view class="dian"></view>
+        </view> {{ index + 1 < 10 ? '0'+(index+1) : index+1 }}
+        </view>
+        <view class="item-list-body">
+            <view class="list-item-title">{{item.title}}</view>
+            <view class="list-item-introduction">{{item.introduction}}</view>
+        </view>
+
+</view>
+</view>
+
+
+</view>
+
+
+
+    </view>
+</view>

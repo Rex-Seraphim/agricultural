@@ -1,0 +1,259 @@
+/* pages/login/login.wxss */
+/* 驼峰转化函数 */
+
+.login-container{
+padding
+:260px 12px 12px 12px;
+min-height
+:100vh;
+background:url("http://clfile.zggen.cn/20241104/ecc1f55fe1db46a2bbd2f4f9e559e9e0.jpg") no-repeat center center /  100% 100%!important;
+min-height: 100vh;
+height
+:auto;
+display:flex;
+justify-content: center;
+}
+.content{
+overflow: hidden;
+padding
+:24px 24px 12px 24px;
+margin
+:30px 0 0 0;
+border-radius
+:10px;
+background
+:#ffffff;
+display
+:block;
+width
+:100%;
+height
+:auto;
+}
+.avatar{
+width
+:80px;
+margin
+:0 auto 12px auto;
+border-radius
+:4px;
+display
+:none;
+height
+:80px;
+}
+.box{
+width
+:100%;
+margin
+:0 0 15px 0;
+text-align
+:left;
+height
+:auto;
+}
+input{
+width:90%!important;
+border
+:0px solid #dddddd;
+padding
+:0px 12px 0 12px;
+margin
+:0 0 0 0;
+color
+:#000;
+border-radius
+:4px;
+background
+:#b7d57330;
+width
+:100%;
+font-size
+:14px;
+height
+:40px;
+}
+
+.section {
+padding:0!important;
+border
+:0px solid #dddddd;
+padding
+:0px 12px 0 12px;
+margin
+:0 0 20px 0;
+border-radius
+:4px;
+text-align
+:left;
+background
+:#b7d57330;
+width
+:100%;
+height
+:auto;
+}
+.picker-text{
+width
+:100%;
+line-height
+:40px;
+font-size
+:14px;
+color
+:#767676;
+text-align
+:left;
+max-width: calc(100% - 48rpx)!important;
+padding: 0 24rpx 0 24rpx;
+}
+.login-btn{
+border
+:0;
+padding
+:0 0 0 0;
+margin
+:10px 0 10px 0;
+color
+:#fff;
+border-radius
+:4px;
+background
+:#b7d573;
+width
+:auto;
+letter-spacing
+:2px;
+line-height
+:40px;
+font-size
+:16px;
+min-width
+:120px;
+height
+:40px;
+}
+.face-btn{
+border
+:0;
+padding
+:0 0 0 0;
+margin
+:10px 0 10px 0;
+color
+:#fff;
+border-radius
+:4px;
+background
+:#b7d573;
+width
+:auto;
+letter-spacing
+:2px;
+line-height
+:40px;
+font-size
+:16px;
+min-width
+:120px;
+height
+:40px;
+text-align: center;
+}
+.box2{
+width
+:auto;
+margin
+:6px 0 12px 0;
+flex-wrap
+:wrap;
+justify-content
+:space-between;
+display
+:flex;
+height
+:auto;
+}
+.forgot-password,.face-recognition{
+padding
+:10px 0 10px 0;
+margin
+:0 0 10px 0;
+font-size
+:14px;
+color
+:#666;
+border-radius
+:0;
+background
+:#fff;
+}
+.register-btn{
+padding
+:10px 0 10px 0;
+margin
+:0 10px 10px 0;
+font-size
+:14px;
+color
+:#666;
+border-radius
+:0;
+background
+:#fff;
+}
+
+.code-box{
+width
+:100%;
+margin
+:0 0 15px 0;
+flex-wrap
+:wrap;
+text-align
+:left;
+display
+:flex;
+height
+:auto;
+}
+.code-input{
+border
+:0px solid #dddddd;
+padding
+:0 12px 0 12px;
+margin
+:0 0 0 0;
+color
+:#000;
+border-radius
+:4px 0 0 4px;
+background
+:#b7d57330;
+width
+:calc(100% - 84px);
+font-size
+:14px;
+height
+:40px;
+width: calc(100% - 258rpx)!important;
+}
+
+.img-code {
+border: 2rpx solid #eeeeee;
+border-radius: 60rpx;
+height: 88rpx;
+width: 30%;
+display: flex;
+justify-content: center;
+}
+
+#captchaCanvas {
+left: 2rpx;
+font-size: 12px;
+top: -6px;
+padding: 0 20rpx;
+}
+
+
+

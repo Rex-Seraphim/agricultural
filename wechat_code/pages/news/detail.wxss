@@ -1,0 +1,140 @@
+.content{
+display: flex;
+height: inherit;
+width: inherit;
+}
+.container{
+width: 100%;
+padding: 0px;
+position: relative;
+height: auto;
+}
+.storeUp_thumbsUp_maxBox{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+}
+.detail-content{
+overflow: hidden;
+flex-wrap: wrap;
+display: flex;
+width: 50%;
+height: auto;
+z-index: 1111;
+}
+.icon{
+margin: 0px 2px 0px 0px;
+line-height: 42px;
+font-size: 19px;
+color: rgb(102, 102, 102);
+}
+.storeUp_text,.thumbsUp_text{
+color: rgb(102, 102, 102);
+line-height: 42px;
+font-size: 17px;
+}
+
+.detail-list-item{
+margin: 0px 0px 12px;
+border-color: rgb(216, 216, 216);
+border-width: 0px 0px 1px;
+display: flex;
+width: 100%;
+border-style: solid;
+height: auto;
+}
+.lable{
+width: auto;
+padding: 0px 5px 0px 0px;
+line-height: 25px;
+font-size: 17px;
+color: rgb(51, 51, 51);
+text-align: right;
+}
+.introduction{
+padding: 0px;
+margin: 0px;
+line-height: 25px;
+font-size: 17px;
+color: rgb(0, 0, 0);
+flex: 1 1 0%;
+}
+.time-content{
+width: 100%;
+margin: 21px 0px;
+background: none;
+height: auto;
+}
+.comoment_header{
+width: 100%;
+background: rgb(246, 246, 244);
+justify-content: space-between;
+display: flex;
+height: auto;
+}
+.comoment_tip{
+padding: 0px 12px;
+line-height: 42px;
+font-size: 17px;
+color: rgb(51, 51, 51);
+}
+.btn-comment-content{
+display: flex;
+align-items: center;
+padding: 0px 10px;
+background: rgb(212, 207, 93);
+}
+.cuIcon_add{
+margin: 0px 4px 0px 0px;
+line-height: 42px;
+font-size: 17px;
+color: rgb(255, 255, 255);
+}
+.add_comment{
+color: rgb(255, 255, 255);
+line-height: 42px;
+font-size: 17px;
+}
+.comment-item{
+width: 100%;
+padding: 12px;
+margin: 12px 0px 0px;
+background: rgb(246, 246, 244);
+height: auto;
+}
+.user_box{
+width: 100%;
+display: flex;
+height: auto;
+}
+.text-nickname{
+color: rgb(51, 51, 51);
+line-height: 32px;
+font-size: 17px;
+}
+.text_content{
+margin: 4px 0px;
+line-height: 1.5;
+font-size: 17px;
+color: rgb(102, 102, 102);
+}
+.avatarurl{
+width: 32px;
+margin: 0px 4px 0px 0px;
+border-radius: 100%;
+display: block;
+height: 32px;
+}
+.text-reply{
+margin: 4px 0px;
+line-height: 1.5;
+font-size: 17px;
+color: rgb(102, 102, 102);
+}
+.comment_addtime{
+width: 100%;
+line-height: 12px;
+font-size: 14px;
+color: rgb(153, 153, 153);
+text-align: right;
+}
